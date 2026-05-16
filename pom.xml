@@ -23,11 +23,11 @@
 	<distributionManagement>
 		<repository>
 			<id>github</id>
-			<url>https://maven.pkg.github.com/${github.owner}/sedcore-core</url>
+			<url>https://maven.pkg.github.com/${github.owner}/core</url>
 		</repository>
 		<snapshotRepository>
 			<id>github</id>
-			<url>https://maven.pkg.github.com/${github.owner}/sedcore-core</url>
+			<url>https://maven.pkg.github.com/${github.owner}/core</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<dependencies>
