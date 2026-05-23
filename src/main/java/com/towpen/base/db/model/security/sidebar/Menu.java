@@ -18,7 +18,8 @@ public class Menu extends TOpenSimpleDbEntity {
 
 
     private String label;
-    private String icon;
+    // Material Icons codepoint (int). 0/null → frontend Icons.help_outline.
+    private Integer icon;
     private boolean submenu;
     private boolean showSubRoute;
 
@@ -29,7 +30,7 @@ public class Menu extends TOpenSimpleDbEntity {
     @OneToMany(mappedBy = "menu", cascade = CascadeType.ALL)
     private List<MenuItem> items = new ArrayList<>();
 
-    public Menu(String id,String label, String icon, boolean submenu, boolean showSubRoute,  List<MenuItem> items) {
+    public Menu(String id,String label, Integer icon, boolean submenu, boolean showSubRoute,  List<MenuItem> items) {
         this.label = label;
         this.icon = icon;
         this.submenu = submenu;
